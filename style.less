@@ -1,0 +1,105 @@
+.root {
+  background-color: #E5E5E5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .body {
+    display: flex;
+    font-family: sans-serif;
+    margin: 0 -20px;
+
+    & > * {
+      margin: 0 20px;
+    }
+
+    .screen {
+      width: 414px;
+      height: 896px;
+      background: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+
+      .menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 56px 24px 40px 24px;
+
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+
+        .menu_title {
+          font-weight: bold;
+          font-size: 28px;
+          line-height: 34px;
+          text-align: center;
+          color: #4E4B6F;
+        }
+
+      }
+
+      .avatar {
+        margin: 0 24px 40px 24px;
+        background: url("./images/girl.png") center no-repeat;
+        background-size: cover;
+        width: 366px;
+        height: 622px;
+        border-radius: 24px;
+        position: relative;
+
+        .description {
+          position: absolute;
+          bottom: 32px;
+          right: 0;
+          left: 24px;
+          background: #FFFFFF;
+          opacity: 0.9;
+          border-radius: 20px 0 0 20px;
+          padding: 24px;
+
+          .title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 29px;
+            color: #16123D;
+            padding-bottom: 8px;
+          }
+
+          .subtitle {
+            font-size: 16px;
+            line-height: 19px;
+            color: #4E4B6F;
+          }
+
+        }
+
+      }
+
+      .buttonSet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 83px;
+
+        .button {
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 64px;
+          height: 64px;
+          background: #FFFFFF;
+          box-shadow: 0px 8px 30px rgba(22, 18, 61, 0.12);
+        }
+
+      }
+
+    }
+  }
+
+
+}
