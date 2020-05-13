@@ -113,295 +113,152 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        overflow-y: scroll;
 
-        .menuButtons {
-          position: absolute;
-          margin: 0 24px 0 24px;
-          width: 366px;
-          top: 56px;
-          display: flex;
-          justify-content: space-between;
-        }
-
-        .photos {
-          width: 390px;
-          height: 412px;
-          display: flex;
-          margin-left: 24px;
-          border-radius: 0 0 0 24px;
-          overflow-x: scroll;
-
-          ::-webkit-scrollbar-track {
+        .screenProfileBody{
+          padding-top: 20px;
+          overflow-y: scroll;
+          .menuButtons {
             position: absolute;
-            width: 100px;
-            height: 6px;
-            left: 266px;
-            top: 382px;
-
-            background: #FFFFFF;
-            opacity: 0.3;
-            border-radius: 50px;
-          }
-        }
-
-        .mainInfo {
-          margin: 24px 0 0 24px;
-
-          .title {
+            margin: 0 24px 0 24px;
+            width: 366px;
+            top: 56px;
             display: flex;
             justify-content: space-between;
-            width: 257px;
-            padding-right: 16px;
+          }
 
-            .name {
+          .photos {
+            width: 390px;
+            height: 412px;
+            display: flex;
+            margin-left: 24px;
+            border-radius: 0 0 0 24px;
+            overflow-x: scroll;
+          }
+
+          .mainInfo {
+            margin: 24px 0 0 24px;
+
+            .title {
+              display: flex;
+              justify-content: space-between;
+              width: 257px;
+              padding-right: 16px;
+
+              .name {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 29px;
+
+                color: #16123D;
+              }
+
+              .status {
+                align-self: center;
+              }
+            }
+
+            .subtitle {
+              padding-top: 8px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 19px;
+
+              color: #4E4B6F;
+            }
+
+            .distance {
+              padding-top: 8px;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 19px;
+
+              color: #4E4B6F;
+
+            }
+          }
+
+          .aboutInfo {
+            margin: 36px 24px 0 24px;
+
+            .title {
               font-style: normal;
               font-weight: 600;
-              font-size: 24px;
-              line-height: 29px;
+              font-size: 18px;
+              line-height: 22px;
+              text-transform: uppercase;
 
-              color: #16123D;
+              color: #4E4B6F;
             }
 
-            .status {
-              align-self: center;
-            }
-          }
-
-          .subtitle {
-            padding-top: 8px;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 19px;
-
-            color: #4E4B6F;
-          }
-
-          .distance {
-            padding-top: 8px;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 19px;
-
-            color: #4E4B6F;
-
-          }
-        }
-
-        .aboutInfo {
-          margin: 36px 24px 0 24px;
-
-          .title {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
-            text-transform: uppercase;
-
-            color: #4E4B6F;
-          }
-
-          .subtitle {
-            padding-top: 12px;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 24px;
-            word-break: break-word;
-            color: #4E4B6F;
-          }
-        }
-
-        .interests {
-          margin: 36px 24px 0 24px;
-
-          .title {
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 22px;
-            text-transform: uppercase;
-            color: #4E4B6F;
-
-          }
-
-          .tags {
-            padding-top: 14px;
-            display: flex;
-            flex-wrap: wrap;
-            margin: -6px;
-
-            & > * {
-              margin: 6px;
-            }
-
-            .tag {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 28px;
-              padding: 0 16px;
-              border-radius: 50px;
+            .subtitle {
+              padding-top: 12px;
+              font-style: normal;
+              font-weight: normal;
               font-size: 16px;
-              font-weight: 300;
+              line-height: 24px;
+              word-break: break-word;
+              color: #4E4B6F;
+            }
+          }
+
+          .interests {
+            margin: 36px 24px 0 24px;
+
+            .title {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 22px;
+              text-transform: uppercase;
+              color: #4E4B6F;
+
+            }
+
+            .tags {
+              padding-top: 14px;
+              display: flex;
+              flex-wrap: wrap;
+              margin: -6px;
+
+              & > * {
+                margin: 6px;
+              }
+
+              .tag {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 28px;
+                padding: 0 16px;
+                border-radius: 50px;
+                font-size: 16px;
+                font-weight: 300;
+              }
+            }
+          }
+          .instagramPhoto{
+            margin: 36px 24px 0 24px;
+            .title{
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 22px;
+              text-transform: uppercase;
+
+              color: #4E4B6F;
+            }
+            .intPhotos{
+              padding-top: 14px;
+              display: flex;
+              justify-content: space-between;
+              width: 366px;
             }
           }
         }
       }
-
-      /* .photos{
-         margin: 0 0 0 24px;
-         width: 390px;
-         height: 412px;
-         background: url("images/girl2.png");
-         border-radius: 0 0 24px;
-         position: relative;
-         .previousButton{
-           position: absolute;
-           width: 24px;
-           height: 24px;
-           left: 24px;
-           top: 56px;
-         }
-         .menuButton{
-           position: absolute;
-           width: 24px;
-           height: 24px;
-           left: 366px;
-           top: 56px;
-         }
-         .slideBar{
-           position: absolute;
-           background: url("images/slideBar.svg");
-           width: 100px;
-           height: 6px;
-           left: 290px;
-           top: 382px;
-           .slideBarStatus{
-             position: absolute;
-             margin: -8px;
-             width: 20px;
-             height: 6px;
-             left: 20px;
-           }
-         }
-       }
-       .mainInfo{
-         position: absolute;
-         width: 257px;
-         height: 83px;
-         top: 436px;
-         left: 24px;
-         .onlineStatus{
-           position: absolute;
-           width: 10px;
-           height: 10px;
-           margin: 4px 0 0 240px;
-
-         }
-         .title{
-           font-style: normal;
-           font-weight: 600;
-           font-size: 24px;
-           line-height: 29px;
-           padding-bottom: 8px;
-
-           color: #16123D;
-         }
-         .subtitle{
-
-           font-style: normal;
-           font-weight: normal;
-           font-size: 16px;
-           line-height: 19px;
-           padding-bottom: 8px;
-
-           color: #4E4B6F;
-         }
-         .distance{
-           font-style: normal;
-           font-weight: normal;
-           font-size: 16px;
-           line-height: 19px;
-
-           color: #4E4B6F;
-         }
-       }
-       .descriptionOfProfile{
-         position: absolute;
-         width: 366px;
-         height: 106px;
-         left: 24px;
-         top: 555px;
-         .title{
-           font-style: normal;
-           font-weight: 600;
-           font-size: 18px;
-           line-height: 22px;
-           text-transform: uppercase;
-           padding-bottom: 12px;
-
-           color: #4E4B6F;
-         }
-         .subtitle{
-           word-break: break-word;
-           font-style: normal;
-           font-weight: normal;
-           font-size: 15.6px;
-           line-height: 24px;
-
-           color: #4E4B6F;
-         }
-       }
-       .interests{
-         position: absolute;
-         width: 360px;
-         height: 104px;
-         left: 24px;
-         top: 697px;
-         .title{
-           font-style: normal;
-           font-weight: 600;
-           font-size: 18px;
-           line-height: 22px;
-           padding-bottom: 14px;
-
-           text-transform: uppercase;
-
-           color: #4E4B6F;
-         }
-         .group1{
-           display: flex;
-           justify-content: space-between;
-         }
-         .group2{
-           width: 294px;
-           display: flex;
-           justify-content: space-between;
-         }
-       }
-       .instagramPhoto{
-         position: absolute;
-         width: 366px;
-         height: 150px;
-         left: 24px;
-         top: 837px;
-         .title{
-           font-style: normal;
-           font-weight: 600;
-           font-size: 18px;
-           line-height: 22px;
-           text-transform: uppercase;
-
-           color: #4E4B6F;
-         }
-         .instPhoto{
-           display: flex;
-           justify-content: space-between;
-         }
-       } */
     }
   }
 }
