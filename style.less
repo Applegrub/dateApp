@@ -105,27 +105,146 @@
         }
 
       }
-      .buttonSet {
-        //position: absolute;
-        //top: 768px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 83px;
 
-        .button {
-          border-radius: 50%;
+      &Profile{
+        width: 414px;
+        height: 896px;
+        background: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow-y: scroll;
+
+        .menuButtons {
+          position: absolute;
+          margin: 0 24px 0 24px;
+          width: 366px;
+          top: 56px;
           display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 64px;
-          height: 64px;
-          background: #FFFFFF;
-          box-shadow: 0px 8px 30px rgba(22, 18, 61, 0.12);
+          justify-content: space-between;
         }
 
+        .photos{
+          width: 390px;
+          height: 412px;
+          display: flex;
+          margin-left: 24px;
+          border-radius: 0 0 0 24px;
+          overflow-x: scroll;
+
+          ::-webkit-scrollbar-track{
+            position: absolute;
+            width: 100px;
+            height: 6px;
+            left: 266px;
+            top: 382px;
+
+            background: #FFFFFF;
+            opacity: 0.3;
+            border-radius: 50px;
+          }
+        }
+
+        .mainInfo{
+          margin: 24px 0 0 24px;
+          .title{
+            display: flex;
+            justify-content: space-between;
+            width: 257px;
+            padding-right: 16px;
+            .name {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+
+              color: #16123D;
+            }
+            .status{
+              align-self: center;
+            }
+          }
+          .subtitle{
+            padding-top: 8px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #4E4B6F;
+          }
+          .distance{
+            padding-top: 8px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #4E4B6F;
+
+          }
+        }
+
+        .aboutInfo{
+          margin: 36px 24px 0 24px;
+
+          .title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+
+            color: #4E4B6F;
+          }
+          .subtitle{
+            padding-top: 12px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            word-break: break-word;
+            color: #4E4B6F;
+          }
+        }
+
+        .interests{
+          margin: 36px 24px 0 24px;
+
+          .title{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #4E4B6F;
+
+          }
+          .subtitle{
+            padding-top: 14px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .block{
+              display: flex;
+              width: 74px;
+              height: 28px;
+              background: #FFE9E6;
+              border-radius: 50px;
+              .text{
+                margin: auto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+
+                color: #FF6F59;
+              }
+            }
+          }
+        }
       }
-      .photos{
+     /* .photos{
         margin: 0 0 0 24px;
         width: 390px;
         height: 412px;
@@ -275,8 +394,33 @@
           display: flex;
           justify-content: space-between;
         }
-      }
+      } */
     }
     }
   }
+.buttonSet {
+  position: absolute;
+  top: 768px;
+  width: 248px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 83px;
 
+  .button {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 30px rgba(22, 18, 61, 0.12);
+  }
+
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url("images/ProximaNova.ttf");
+}
